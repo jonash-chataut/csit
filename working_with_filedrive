@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Python Externally",
+      "type": "process",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "start",
+        "cmd",
+        "/k",
+        "title ${fileDirname} && COLOR F0 && echo Username: Jonash Chataut && echo ** AI lab report ** && echo. && python",
+        "${file}",
+        "&",
+        "pause"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
