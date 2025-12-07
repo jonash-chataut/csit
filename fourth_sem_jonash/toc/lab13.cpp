@@ -35,7 +35,7 @@ int main()
 
     printf("\nEnter the number of rules according to NFA::");
     scanf("%d", &rel);
-    printf("\nDefine transition rule as \"initial state input symbol final state\"\n");
+    printf("\n\nDefine transition rule as \"initial state input symbol final state\"\n");
 
     for (i = 0; i < rel; i++)
     {
@@ -78,27 +78,27 @@ int main()
         printf("for %d ---- ", arr[x]);
         for (j = 0; j < 2; j++)
         {
-            int new = 0;
+            int newState = 0;
             for (k = 0; k < st; k++)
             {
                 if (arr[i] & (1 << k))
                 {
                     int h = pow(2, k);
-                    if (new == 0)
-                        new =
+                    if (newState == 0)
+                        newState =
                             go[h][j];
-                    new = new |
-                          (go[h][j]);
+                    newState = newState |
+                               (go[h][j]);
                 }
             }
-            if (state[new] == 0)
+            if (state[newState] == 0)
             {
-                arr[x++] = new;
-                state[new] = 1;
+                arr[x++] = newState;
+                state[newState] = 1;
             }
         }
     }
-    printf("\nThe total number of distinct states are::\n");
+    printf("\nThe total number of distinct states are:\n");
 
     printf("STATE 0 1\n");
     for (i = 0; i < 10000; i++)
