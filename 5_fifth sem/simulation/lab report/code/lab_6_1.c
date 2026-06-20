@@ -1,3 +1,6 @@
+/* Q.N. 1: What is random number and what are its properties. WAP in C to generate 100 random numbers
+using Linear Congruential Method where X0=11, m=100, a = 5 and c = 13.*/
+
 #include <stdio.h>
 #include <conio.h>
 #define SIZE 100
