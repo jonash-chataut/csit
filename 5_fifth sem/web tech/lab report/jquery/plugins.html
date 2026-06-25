@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>jQuery Plugins Demo</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+
+        /* Zoom Image */
+        img{
+            width: 150px;
+        }
+
+        /* Accordion Content Hidden Initially */
+        #panel{
+            display: none;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* Toast Hidden Initially */
+        #toast{
+            display: none;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            width: 150px;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Slider -->
+    <h3>Slider</h3>
+
+    <input type="range">
+
+    <!-- Accordion -->
+    <h3>Accordion</h3>
+
+    <button id="acc">
+        Open Section
+    </button>
+
+    <div id="panel">
+
+        Accordion Content
+
+    </div>
+
+    <!-- Zoom -->
+    <h3>Zoom</h3>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVV_pGWETbVDJPp5Lm8ti7OUGDahLRLxjNDnvuBtwYANNsJRsk1WcXuLU&s=10"
+         id="img">
+
+    <!-- Toast Message -->
+    <h3>Toast Message</h3>
+
+    <button id="toastBtn">
+
+        Show Toast
+
+    </button>
+
+    <div id="toast">
+
+        Message Sent!
+
+    </div>
+
+    <script>
+
+        /* Accordion */
+        $("#acc").click(function(){
+
+            $("#panel").slideToggle();
+        });
+
+        /* Zoom Effect */
+        $("#img").hover(
+
+            function(){
+
+                $(this).css("transform",
+                            "scale(1.2)");
+            },
+
+            function(){
+
+                $(this).css("transform",
+                            "scale(1)");
+            }
+        );
+
+        /* Toast Message */
+        $("#toastBtn").click(function(){
+
+            $("#toast")
+            .fadeIn()
+            .delay(1000)
+            .fadeOut();
+        });
+
+    </script>
+
+</body>
+
+</html>
