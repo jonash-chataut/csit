@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Webpage -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Arithmetic Calculator</title>
+
+    <style>
+
+        /* Body Styling */
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Calculator Box */
+        .calculator{
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        /* Input Fields */
+        input{
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Buttons */
+        button{
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* Result */
+        #result{
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Calculator Heading -->
+    <h2>Simple Arithmetic Calculator</h2>
+
+    <!-- Calculator Container -->
+    <div class="calculator">
+
+        <!-- First Number -->
+        <input type="number"
+               id="num1"
+               placeholder="Enter First Number">
+
+        <!-- Second Number -->
+        <input type="number"
+               id="num2"
+               placeholder="Enter Second Number">
+
+        <br>
+
+        <!-- Operation Buttons -->
+        <button onclick="add()">Add</button>
+
+        <button onclick="subtract()">Subtract</button>
+
+        <button onclick="multiply()">Multiply</button>
+
+        <button onclick="divide()">Divide</button>
+
+        <!-- Result Display -->
+        <div id="result">
+            Result:
+        </div>
+
+    </div>
+
+    <script>
+
+        /* Addition Function */
+        function add(){
+
+            let a =
+                parseFloat(document.getElementById("num1").value);
+
+            let b =
+                parseFloat(document.getElementById("num2").value);
+
+            document.getElementById("result").innerHTML =
+                "Result: " + (a + b);
+        }
+
+        /* Subtraction Function */
+        function subtract(){
+
+            let a =
+                parseFloat(document.getElementById("num1").value);
+
+            let b =
+                parseFloat(document.getElementById("num2").value);
+
+            document.getElementById("result").innerHTML =
+                "Result: " + (a - b);
+        }
+
+        /* Multiplication Function */
+        function multiply(){
+
+            let a =
+                parseFloat(document.getElementById("num1").value);
+
+            let b =
+                parseFloat(document.getElementById("num2").value);
+
+            document.getElementById("result").innerHTML =
+                "Result: " + (a * b);
+        }
+
+        /* Division Function */
+        function divide(){
+
+            let a =
+                parseFloat(document.getElementById("num1").value);
+
+            let b =
+                parseFloat(document.getElementById("num2").value);
+
+            if(b == 0){
+
+                document.getElementById("result").innerHTML =
+                    "Cannot Divide by Zero";
+            }
+            else{
+
+                document.getElementById("result").innerHTML =
+                    "Result: " + (a / b);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

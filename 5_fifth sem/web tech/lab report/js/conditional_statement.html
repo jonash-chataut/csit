@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Conditional Statements</title>
+
+</head>
+
+<body>
+
+    <h2>Conditional Statements</h2>
+
+    <script>
+
+        let age = 20;
+
+        if(age >= 18){
+
+            document.write("Eligible to Vote<br>");
+        }
+
+
+        let number = 5;
+
+        if(number % 2 == 0){
+
+            document.write("Even Number<br>");
+        }
+        else{
+
+            document.write("Odd Number<br>");
+        }
+
+
+
+        let marks = 75;
+
+        if(marks >= 80){
+
+            document.write("Grade A<br>");
+        }
+        else if(marks >= 60){
+
+            document.write("Grade B<br>");
+        }
+        else if(marks >= 40){
+
+            document.write("Grade C<br>");
+        }
+        else{
+
+            document.write("Fail<br>");
+        }
+
+        let day = 2;
+
+        switch(day){
+
+            case 1:
+                document.write("Sunday");
+                break;
+
+            case 2:
+                document.write("Monday");
+                break;
+
+            case 3:
+                document.write("Tuesday");
+                break;
+
+            default:
+                document.write("Invalid Day");
+        }
+
+    </script>
+
+</body>
+
+</html>

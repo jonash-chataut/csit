@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>setTimeout and setInterval Example</title>
+
+    <script>
+
+        /* Function for setTimeout */
+        function showMessage(){
+
+            document.getElementById("timeout").innerHTML =
+                "Message displayed after 3 seconds";
+        }
+
+        /* Function for setInterval */
+        function showTime(){
+
+            let date = new Date();
+
+            document.getElementById("clock").innerHTML =
+                date.toLocaleTimeString();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>JavaScript Timer Functions</h2>
+
+    <!-- setTimeout Output -->
+    <p id="timeout">
+        Waiting for message...
+    </p>
+
+    <!-- setInterval Output -->
+    <p>
+        Current Time:
+        <span id="clock"></span>
+    </p>
+
+    <script>
+
+        /* Executes once after 3 seconds */
+        setTimeout(showMessage, 3000);
+
+        /* Executes repeatedly every 1 second */
+        setInterval(showTime, 1000);
+
+    </script>
+
+</body>
+
+</html>

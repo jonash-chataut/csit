@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Digital Clock</title>
+
+    <script>
+
+        function showTime(){
+
+            let now = new Date();
+
+            let hours = now.getHours();
+
+            let minutes = now.getMinutes();
+
+            let seconds = now.getSeconds();
+
+            document.getElementById("clock").innerHTML =
+                hours + ":" + minutes + ":" + seconds;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Digital Clock Using Date Object</h2>
+
+    <h1 id="clock"></h1>
+
+    <script>
+
+        /* Update clock every second */
+        setInterval(showTime, 1000);
+
+    </script>
+
+</body>
+
+</html>
