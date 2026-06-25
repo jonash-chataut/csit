@@ -1,0 +1,34 @@
+/* Grid Container */
+
+.grid-container{
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+/* Grid Items */
+
+.item{
+
+    background-color: lightgreen;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border: 1px solid black;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+
+    .grid-container{
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

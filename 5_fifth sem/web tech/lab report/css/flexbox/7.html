@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+.flex{display:flex}
+.grid{display:grid;grid-template-columns:1fr 1fr}
+
+@media(max-width:600px){
+  .flex{flex-direction:column}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+    </head>
+<div class="flex">
+  <div>A</div><div>B</div>
+</div>
+
+<div class="grid">
+  <div>1</div><div>2</div>
+</div>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Webpage -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Position Example</title>
+
+    <style>
+
+        /* Parent Container */
+        .container{
+            width: 600px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        /* Relative Position Example */
+        .relative-box{
+
+            width: 150px;
+            height: 100px;
+
+            background-color: lightblue;
+
+            position: relative;
+
+            left: 50px;
+            top: 20px;
+
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* Absolute Position Example */
+        .absolute-box{
+
+            width: 150px;
+            height: 100px;
+
+            background-color: lightgreen;
+
+            position: absolute;
+
+            top: 150px;
+            left: 300px;
+
+            text-align: center;
+            line-height: 100px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Main Heading -->
+    <h2 align="center">
+        Relative and Absolute Position Example
+    </h2>
+
+    <!-- Parent Container -->
+    <div class="container">
+
+        <!-- Relative Positioned Box -->
+        <div class="relative-box">
+            Relative Box
+        </div>
+
+        <!-- Absolute Positioned Box -->
+        <div class="absolute-box">
+            Absolute Box
+        </div>
+
+    </div>
+
+</body>
+
+</html>
