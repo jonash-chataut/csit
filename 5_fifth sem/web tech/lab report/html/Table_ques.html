@@ -1,0 +1,80 @@
+<!-- Create an HTML table showcasing the use of attributes like margin, rowspan, colspan,
+cellspacing, etc. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+
+    <style>
+        body{
+            margin: 10px; /* Margin attribute example */
+        }
+        
+         /* To have border in each cells*/
+        th,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table{
+            width: 80%;
+            margin: auto;
+
+            /* Cellspacing effect using CSS */
+            /* border-spacing: 20px; */
+
+            /* to merge borders of adjacent cells into a single border. */
+            /* border-collapse: collapse */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Main heading -->
+    <h1 align="center">HTML Table Concepts</h1>
+
+    <!-- Table creating -->
+     <table cellspacing="10">
+        <!-- First row  -->
+        <tr>
+            <!-- Headings -->
+            <!-- use of rowspan -->
+            <th rowspan="2">S.N.</th>
+            <!-- use of colspan -->
+            <th colspan="2">Student Information</th>
+            <th rowspan="2">GPA</th>
+        </tr>
+           
+        <tr>
+            <!-- Sub Heading -->
+            <th>Name</th>
+            <th>Faculty</th>
+        </tr>
+
+        <!-- Data row 1 -->
+        <tr>
+            <td>1</td>
+            <td>Ayush</td>
+            <td>BCA</td>
+            <td>85</td>
+        </tr>
+
+        <!-- Data row 2 -->
+        <tr>
+            <td>2</td>
+            <td>Jonash</td>
+            <td>Bsc. CSIT</td>
+            <td>84</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Total Student</td>
+            <td>2</td>
+        </tr>
+
+     </table>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Webpage -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>HTML Form Example</title>
+
+    <style>
+
+        /* Body Styling */
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 40px;
+        }
+
+        /* Form Container */
+        form{
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        /* Heading */
+        h2{
+            text-align: center;
+        }
+
+        /* Label Styling */
+        label{
+            font-weight: bold;
+        }
+
+        /* Input Fields */
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Radio and Checkbox */
+        .option{
+            width: auto;
+        }
+
+        /* Submit Button */
+        input[type="submit"]{
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Form Heading -->
+    <h2>Registration Form</h2>
+
+    <!-- Form Starts -->
+    <form>
+
+        <!-- Text Input -->
+        <label>Full Name:</label>
+
+        <input type="text"
+               placeholder="Enter your name">
+
+
+        <!-- Email Input -->
+        <label>Email:</label>
+
+        <input type="email"
+               placeholder="Enter your email">
+
+
+        <!-- Password Input -->
+        <label>Password:</label>
+
+        <input type="password"
+               placeholder="Enter password">
+
+
+        <!-- Number Input -->
+        <label>Age:</label>
+
+        <input type="number"
+               placeholder="Enter your age">
+
+
+        <!-- Date Input -->
+        <label>Date of Birth:</label>
+
+        <input type="date">
+
+
+        <!-- Radio Button -->
+        <label>Gender:</label>
+        <br><br>
+
+        <input type="radio"
+               name="gender"
+               class="option"> Male
+
+        <input type="radio"
+               name="gender"
+               class="option"> Female
+
+        <br><br>
+
+
+        <!-- Checkbox -->
+        <label>Hobbies:</label>
+        <br><br>
+
+        <input type="checkbox"
+               class="option"> Reading
+
+        <input type="checkbox"
+               class="option"> Music
+
+        <input type="checkbox"
+               class="option"> Sports
+
+        <br><br>
+
+
+        <!-- Submit Button -->
+        <input type="submit"
+               value="Register">
+
+    </form>
+    <!-- Form Ends -->
+
+</body>
+
+</html>
